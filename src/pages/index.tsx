@@ -19,13 +19,6 @@ export async function getServerSideProps() {
 export default function Home({ sites = [] }) {
   return (
     <div className={style.container}>
-      <Head>
-        <meta name="title" content="U2F" />
-        <meta
-          name="description"
-          content="A collection of sites that support hardware U2F tokens"
-        />
-      </Head>
       <h2>Hardware Token Support</h2>
       <div className={style.main}>
         {sites.map((item: any) => {
