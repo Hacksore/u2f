@@ -30,7 +30,7 @@ export default function Home({ sites = [] }) {
               rel="noreferrer"
               className={style.item}
               key={name}
-              href={meta.documentation}
+              href={meta.documentation || `https://${meta.domain}`}
               title={name}
             >
               <ImageWithFallback
